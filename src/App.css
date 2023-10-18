@@ -1,38 +1,507 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+/* font-family: 'VT323', monospace; */
+/* Background: #282a36 */
+/* Roxo: #8a2be2 */
+/* Azul: #2fcbef */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar {
+  background-color: #8a2be2;
+  width: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+::-webkit-scrollbar-thumb {
+  background-color: #2fcbef;
+  border-radius: 10px;
+}
+
+body {
+  background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: 0.4s;
+}
+
+.conteiner {
+  max-height: 100vh;
+}
+
+.header {
+  padding: 1% 5% 1% 5%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.logo-img {
+  width: 10%;
+}
+
+.menu {
+  font-family: "VT323", monospace;
+  color: white;
+  font-size: 1.5em;
+  list-style: none;
+  display: flex;
+  column-gap: 2em;
+}
+
+a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a:hover {
+  color: #8a2be2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+a:visited {
+  color: #2fcbef;
+}
+
+.acessibility {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#light-mode {
+  position: fixed;
+  right: 2%;
+  bottom: 50%;
+  cursor: pointer;
+  border: 4px solid #8a2be2;
+}
+
+#light-mode:hover {
+  background-color: #2fcbef;
+}
+
+/* ---------LIGHT MODE---------------------------- */
+
+body.light {
+  background-image: url(./images/background-light.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .logo-img {
+    visibility: hidden;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+body.light {
+  .main-paragraph,
+  .greetings-paragraph,
+  .portfolio-title,
+  .about-title,
+  .contact-title,
+  .about-paragraph {
+    color: #8a2be2;
+  }
+  .link {
+    color: #8a2be2;
+  }
+}
+
+body.light {
+  .contact-input,
+  .contact-input-text {
+    background-color: rgb(243, 241, 241);
+    border: 4px solid #2fcbef;
+    color: #8a2be2;
+  }
+  .img-site {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.215);
+  }
+}
+
+/* ---------FIM DO LIGHT MODE---------------------------- */
+
+/* ---------------MODO DE ACESSIBILIDADE-----------------*/
+
+body.acessibility {
+  font-size: 1.2rem;
+}
+
+body.acessibility {
+  .contact-input {
+    width: 80%;
+  }
+}
+
+/* ---------------FIM MODO DE ACESSIBILIDADE-----------------*/
+
+#acessibility-mode {
+  width: 3rem;
+  position: fixed;
+  right: 2%;
+  bottom: 40%;
+  cursor: pointer;
+  border: 4px solid #8a2be2;
+}
+
+#acessibility-mode:hover {
+  background-color: #2fcbef;
+}
+
+.main {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2em;
+}
+
+.photo {
+  width: 11%;
+  border-radius: 50%;
+  border: 4px solid #2fccef;
+}
+
+.greetings {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.greetings-paragraph {
+  font-family: "VT323", monospace;
+  font-size: 3em;
+  color: white;
+}
+
+.main-paragraph {
+  width: 30%;
+  text-align: center;
+  font-family: "VT323", monospace;
+  font-size: 1.8em;
+  color: white;
+}
+
+.main-btn {
+  padding: 1% 2%;
+  font-family: "VT323", monospace;
+  font-size: 1.5em;
+  background-color: #2fccef;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.main-btn:hover {
+  font-size: 2em;
+  background-color: #8a2be2;
+}
+
+.back {
+  padding: 0.5em;
+  color: #2fcbef;
+  font-size: 2em;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  border: 4px solid #2fcbef;
+  cursor: pointer;
+}
+
+.back:hover {
+  background-color: #8a2be2;
+}
+
+/* PORTFOLIO ------------------------------------------------------------------------------------*/
+
+.portfolio {
+  margin-top: 15%;
+}
+
+.portfolio-title {
+  font-family: "VT323", monospace;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+
+.item1 {
+  padding: 7% 0 0 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1em;
+}
+
+.item2 {
+  padding: 7% 7% 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 1em;
+}
+
+.item3 {
+  padding: 7% 0 0 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1em;
+}
+
+.item4 {
+  padding: 7% 7% 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 1em;
+}
+
+.portfolio-subtitle {
+  font-family: "VT323", monospace;
+  font-size: 2.5em;
+  color: #2fccef;
+}
+
+.img-site {
+  max-width: 40%;
+  transition: 0.5s;
+}
+
+.img-site:hover {
+  transform: scale(1.1);
+}
+
+/* SOBRE ---------------------------------------------------------------------------------------------*/
+
+.about {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4em;
+}
+
+.about-title {
+  font-family: "VT323", monospace;
+  font-size: 3em;
+  color: white;
+}
+
+.about-paragraph {
+  width: 40%;
+  font-family: "VT323", monospace;
+  font-size: 2em;
+  color: white;
+}
+
+.about-paragraph2 {
+  width: 40%;
+  font-family: "VT323", monospace;
+  font-size: 1.5em;
+  color: #2fcbef;
+}
+
+.footer {
+  padding: 5% 0 2% 0;
+  display: flex;
+  justify-content: center;
+  column-gap: 2em;
+}
+
+/* CONTATO -------------------------------------------------------------------------------*/
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  margin-top: 15%;
+  font-family: "VT323", monospace;
+  font-size: 3em;
+  color: white;
+}
+
+.form-contact {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5em;
+}
+
+label {
+  font-family: "VT323", monospace;
+  font-size: 1.5em;
+  color: #2fcbef;
+}
+
+.contact-input {
+  width: 20em;
+  height: 2.5em;
+  background-color: rgb(55, 56, 57);
+  border: 4px solid #8a2be2;
+  color: #2fcbef;
+  font-family: "VT323", monospace;
+  font-size: 1.1em;
+}
+
+.contact-input-text {
+  background-color: rgb(55, 56, 57);
+  border: 4px solid #8a2be2;
+  color: #2fcbef;
+  font-family: "VT323", monospace;
+  font-size: 1.1em;
+}
+
+.form-btn {
+  padding: 2% 6%;
+  font-family: "VT323", monospace;
+  font-size: 1.5em;
+  background-color: #2fccef;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.form-btn:hover {
+  background-color: #8a2be2;
+  color: #2fcbef;
+}
+
+@media (max-width: 670px) {
+  .greetings-paragraph {
+    font-family: "VT323", monospace;
+    font-size: 2em;
+    color: white;
+  }
+  .greetings-img {
+    width: 1em;
+  }
+  .menu {
+    font-family: "VT323", monospace;
+    color: white;
+    font-size: 1.5em;
+    list-style: none;
+    display: flex;
+    column-gap: 1em;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-img {
+    width: 0;
+  }
+  .main-paragraph {
+    width: 80%;
+    text-align: center;
+    font-family: "VT323", monospace;
+    font-size: 1.8em;
+    color: white;
+  }
+  .photo {
+    width: 40%;
+    border-radius: 50%;
+    border: 4px solid #2fccef;
+  }
+}
+
+@media (max-width: 430px) {
+  body {
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 2%;
+  }
+
+  .main {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4.5em;
+  }
+
+  .header {
+    padding: 5% 0;
+  }
+
+  .menu {
+    column-gap: 1em;
+    font-size: 1.5em;
+  }
+
+  .greetings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 4px;
+  }
+
+  .main-btn {
+    width: 8em;
+    height: 3em;
+  }
+
+  .contact-input {
+    width: 15em;
+    height: 2.5em;
+    background-color: rgb(55, 56, 57);
+    border: 4px solid #8a2be2;
+    color: #2fcbef;
+    font-family: "VT323", monospace;
+    font-size: 1.1em;
+  }
+  .contact-input-text {
+    width: 90%;
+  }
+  .about-paragraph {
+    width: 80%;
+    font-family: "VT323", monospace;
+    font-size: 2em;
+    color: white;
+  }
+
+  .about-paragraph2 {
+    width: 80%;
+    font-family: "VT323", monospace;
+    font-size: 1.5em;
+    color: #2fcbef;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    align-items: center;
+    padding: 10% 0;
+  }
+
+  .img-site {
+    max-width: 18em;
+  }
+
+  .portfolio-title,
+  .about-title,
+  .contact-title {
+    margin-top: 25%;
+    margin-bottom: 15%;
+  }
+  .form-btn {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 7em;
+    height: 2.5em;
   }
 }
