@@ -73,7 +73,7 @@ a:visited {
   justify-content: flex-end;
 }
 
-#light-mode {
+.light-mode {
   position: fixed;
   right: 2%;
   bottom: 50%;
@@ -81,7 +81,7 @@ a:visited {
   border: 4px solid #8a2be2;
 }
 
-#light-mode:hover {
+.light-mode:hover {
   background-color: #2fcbef;
 }
 
@@ -138,7 +138,7 @@ body.acessibility {
 
 /* ---------------FIM MODO DE ACESSIBILIDADE-----------------*/
 
-#acessibility-mode {
+.acessibility-mode {
   width: 3rem;
   position: fixed;
   right: 2%;
@@ -147,7 +147,7 @@ body.acessibility {
   border: 4px solid #8a2be2;
 }
 
-#acessibility-mode:hover {
+.acessibility-mode:hover {
   background-color: #2fcbef;
 }
 

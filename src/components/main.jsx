@@ -7,14 +7,62 @@ import portlens from "../images/portfolio/port-lens.png";
 import portbuen from "../images/portfolio/port-buen.png";
 import portrecife from "../images/portfolio/port-recife.png";
 import portvanart from "../images/portfolio/port-vanart.png";
+import React, { useEffect } from "react";
+
+function LightMode() {
+  const lightMode = document.body;
+
+  lightMode.classList.toggle("light");
+
+  if (lightMode.classList.contains("light")) {
+    localStorage.setItem("modo", "LightMode");
+  } else {
+    localStorage.setItem("modo", "DarkMode");
+  }
+}
+
+function Acessibility() {
+  const fontSize = document.body;
+
+  fontSize.classList.toggle("acessibility");
+
+  if (fontSize.classList.contains("acessibility")) {
+    localStorage.setItem("modo2", "Acessibility");
+  } else {
+    localStorage.setItem("modo2", "Normal");
+  }
+}
 
 function Main() {
+  useEffect(() => {
+    const modoAtual = localStorage.getItem("modo");
+    if (modoAtual === "LightMode") {
+      document.body.classList.add("light");
+    } else {
+      document.body.classList.remove("light");
+    }
+  }, []);
+
+  useEffect(() => {
+    const modoAtual = localStorage.getItem("modo2");
+    if (modoAtual === "Acessibility") {
+      document.body.classList.add("acessibility");
+    } else {
+      document.body.classList.remove("acessibility");
+    }
+  }, []);
+
   return (
     <main class="main">
       <div class="acessibility">
-        <img id="light-mode" src={lightmode} alt="" />
+        <img class="light-mode" src={lightmode} alt="" onClick={LightMode} />
 
-        <img id="acessibility-mode" src={fontemaior} alt="" />
+        <img
+          class="acessibility-mode"
+          src={fontemaior}
+          alt=""
+          onClick={Acessibility}
+        />
       </div>
 
       <img class="photo" src={foto} alt="foto" />
