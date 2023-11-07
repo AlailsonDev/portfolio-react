@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-react/static/css/main.dbab36f3.css",
-    "main.js": "/portfolio-react/static/js/main.44b0704b.js",
+    "main.js": "/portfolio-react/static/js/main.42f31af2.js",
     "static/js/787.aeca62f9.chunk.js": "/portfolio-react/static/js/787.aeca62f9.chunk.js",
     "static/media/port-vanart.png": "/portfolio-react/static/media/port-vanart.feb713be69ecd9ac8327.png",
     "static/media/port-recife.png": "/portfolio-react/static/media/port-recife.5c469fc837bd0d43d591.png",
@@ -12,11 +12,11 @@
     "static/media/background-light.png": "/portfolio-react/static/media/background-light.aa279a0f34f2a673dbc0.png",
     "index.html": "/portfolio-react/index.html",
     "main.dbab36f3.css.map": "/portfolio-react/static/css/main.dbab36f3.css.map",
-    "main.44b0704b.js.map": "/portfolio-react/static/js/main.44b0704b.js.map",
+    "main.42f31af2.js.map": "/portfolio-react/static/js/main.42f31af2.js.map",
     "787.aeca62f9.chunk.js.map": "/portfolio-react/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dbab36f3.css",
-    "static/js/main.44b0704b.js"
+    "static/js/main.42f31af2.js"
   ]
 }
