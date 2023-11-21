@@ -131,6 +131,11 @@ body.acessibility {
 }
 
 body.acessibility {
+  align-items: center;
+  justify-content: center;
+}
+
+body.acessibility {
   .contact-input {
     width: 80%;
   }
