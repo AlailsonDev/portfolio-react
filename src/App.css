@@ -143,8 +143,6 @@ body.acessibility {
   }
 }
 
-/* ---------------FIM MODO DE ACESSIBILIDADE-----------------*/
-
 .acessibility-mode {
   width: 3rem;
   position: fixed;
@@ -157,6 +155,8 @@ body.acessibility {
 .acessibility-mode:hover {
   background-color: #2fcbef;
 }
+
+/* ---------------FIM MODO DE ACESSIBILIDADE-----------------*/
 
 .main {
   margin-top: 5%;
