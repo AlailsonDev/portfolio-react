@@ -1,4 +1,4 @@
-function LightMode() {
+
   function LightMode() {
     const lightMode = document.getElementById("light-mode");
 
@@ -12,6 +12,6 @@ function LightMode() {
       document.body.classList.toggle("acessibility");
     });
   }
-}
+
 
 export default LightMode;

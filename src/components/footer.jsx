@@ -5,7 +5,7 @@ import github from "../images/social/github.png";
 
 function Footer() {
   return (
-    <footer class="footer">
+    <footer className="footer">
       <img src={facebook} />
       <img src={instagram} alt="instagram" class="social-img" />
       <img src={linkedin} />
