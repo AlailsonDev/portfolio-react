@@ -427,6 +427,13 @@ label {
     font-size: 2em;
     color: white;
   }
+
+  .light-mode {
+    
+    bottom: 18%;
+    
+  }
+
   .greetings-img {
     width: 1em;
   }
@@ -468,6 +475,10 @@ label {
     background-position: 2%;
   }
 
+  .light-mode {
+
+  }
+
   .main {
     margin-top: 5%;
     display: flex;
@@ -494,9 +505,8 @@ label {
   }
 
   .main-btn {
-    width: 8em;
-    height: 3em;
-    padding: 2em 0;
+    
+    padding: 1em 2em;
   }
 
   .contact-input {
