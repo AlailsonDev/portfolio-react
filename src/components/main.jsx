@@ -5,7 +5,7 @@ import portlens from "../images/portfolio/port-lens.png";
 import portbuen from "../images/portfolio/port-buen.png";
 import portrecife from "../images/portfolio/port-recife.png";
 import portvanart from "../images/portfolio/port-vanart.png";
-import React, { useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 
 function LightMode() {
   const lightMode = document.body;
@@ -49,6 +49,7 @@ function Main() {
       document.body.classList.remove("acessibility");
     }
   }, []);
+
 
   return (
     <main className="main">
