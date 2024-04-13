@@ -67,10 +67,10 @@ function Main() {
 
       <img class="photo" src={foto} alt="foto" />
       <div class="greetings">
-        <p class="greetings-paragraph">Olá! Me chamo</p>
-        <img src={menorque} alt="menorque" class="greetings-img" />
+        <p class="greetings-paragraph">Olá! Me chamo Alailson Barbosa </p>
+        {/* <img src={menorque} alt="menorque" class="greetings-img" />
         <p class="greetings-paragraph">Alailson Barbosa</p>
-        <img src={maiorque} alt="maiorque" class="greetings-img" />
+        <img src={maiorque} alt="maiorque" class="greetings-img" /> */}
       </div>
       <p class="main-paragraph">
         Sou um Desenvolvedor Front End. Gosto de desenvolver coisas legais para
