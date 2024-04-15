@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+
+
+
+
+
 html {
   scroll-behavior: smooth;
   display: flex;
@@ -27,13 +32,13 @@ html {
   }
 }
 
-.photo, .greetings, .greetings-paragraph, .main-paragraph, .main-btn {
+.photo,
+.greetings,
+.greetings-paragraph,
+.main-paragraph,
+.main-btn {
   animation: slideInFromLeft 1.5s ease-in-out forwards;
 }
-
-
-
-
 
 ::-webkit-scrollbar {
   background-color: #7724c550;
@@ -64,7 +69,7 @@ body {
 }
 
 .logo-img {
-  width: 10%;
+  width: 15%;
 }
 
 .menu {
@@ -401,7 +406,6 @@ label {
 
 .form-btn:hover {
   background-color: #8a2be2;
-  
 }
 
 /* RESPONSIVIDADE---------------------------------------------------------------- */
@@ -410,7 +414,7 @@ label {
   body {
     background-size: cover;
   }
-  .acessibility-mode{
+  .acessibility-mode {
     visibility: hidden;
   }
 }
@@ -429,9 +433,7 @@ label {
   }
 
   .light-mode {
-    
     bottom: 18%;
-    
   }
 
   .greetings-img {
@@ -463,7 +465,6 @@ label {
   .photo {
     width: 40%;
     border-radius: 50%;
-    
   }
 }
 
@@ -473,10 +474,6 @@ label {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 2%;
-  }
-
-  .light-mode {
-
   }
 
   .main {
@@ -505,7 +502,6 @@ label {
   }
 
   .main-btn {
-    
     padding: 1em 2em;
   }
 

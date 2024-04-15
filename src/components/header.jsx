@@ -1,9 +1,16 @@
-import logo from "../images/logo.png";
+import React, { useState } from 'react';
+import logo from "../images/logo1.png";
+
 
 function Header() {
+
+  
+  
+
   return (
     <header className="header" id="top">
-      <img className="logo-img" src={logo} />
+      <img className="logo-img" src={logo} alt='Logo'/>
+      
       <nav className="nav">
         <ul className="menu">
           <a href="#top">
@@ -20,6 +27,8 @@ function Header() {
           </a>
         </ul>
       </nav>
+      
+      
     </header>
   );
 }
